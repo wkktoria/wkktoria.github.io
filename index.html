@@ -6,35 +6,45 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
     <link rel="stylesheet" href="styles/stylesheet.css" />
+    <script src="scripts/translation.js" defer></script>
     <title>wkktoria's website</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#skills">skills</a>
-        <a href="#contact">contact</a>
+        <a href="#about" id="about-link">about</a>
+        <a href="#projects" id="projects-link">projects</a>
+        <a href="#skills" id="skills-link">skills</a>
+        <a href="#contact" id="contact-link">contact</a>
       </nav>
-      <h1>hello, i'm wkktoria! 👋</h1>
+      <select id="language-select">
+        <option value="en" id="english-option">english</option>
+        <option value="pl" id="polish-option">polish</option>
+      </select>
+
+      <h1 id="greeting">hello, i'm wkktoria! 👋</h1>
       <i>aspiring java developer</i>
     </header>
 
     <main>
-      <p class="notice">note: all the links below open in new tabs</p>
+      <p class="notice" id="links-note">
+        note: all the links below open in new tabs
+      </p>
 
       <section id="about">
-        <h2>about</h2>
-        <p>
+        <h2 id="about-heading">about</h2>
+        <p id="about-description">
           i'm dedicated and passionate computer science student, seeking to gain
           more programming experience and face new challenges
         </p>
       </section>
 
       <section id="projects">
-        <h2>projects</h2>
+        <h2 id="projects-heading">projects</h2>
         <p>
-          i'm into open-source, so all of my projects are available on
+          <span id="projects-description"
+            >i'm into open-source, so all of my projects are available on</span
+          >
           <a
             href="https://github.com/wkktoria"
             target="_blank"
@@ -45,9 +55,9 @@
       </section>
 
       <section id="skills">
-        <h2>skills</h2>
-        <p>there are languages and tools that I use</p>
-        <div id="allSkills">
+        <h2 id="skills-heading">skills</h2>
+        <p id="skills-description">there are languages and tools that I use</p>
+        <div id="all-skills">
           <div class="skill">
             <img src="assets/images/java.svg" class="skill-image" />
             <div class="skill-text">java</div>
@@ -96,16 +106,16 @@
       </section>
 
       <section id="contact">
-        <h2>contact</h2>
+        <h2 id="contact-heading">contact</h2>
         <p>
-          feel free to send me
+          <span id="contact-send-me">feel free to send me</span>
           <a
             href="mailto:wiktoria.peretiatkowicz.contact@gmail.com"
             target="_blank"
             rel="noreferrer noopener"
             >e-mail</a
           >
-          or reach me on my socials
+          <span id="contact-reach-me">or reach me on my socials</span>
         </p>
         <ul>
           <li>
