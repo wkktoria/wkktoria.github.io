@@ -18,7 +18,6 @@ const contactReachMe = document.getElementById("contact-reach-me");
 languageSelect.addEventListener("change", (e) => {
   localStorage.setItem("lang", e.target.value);
   loadText();
-  console.log(localStorage.getItem("lang"));
 });
 
 const translations = {
