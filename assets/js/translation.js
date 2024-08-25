@@ -32,7 +32,7 @@ const translations = {
     projectsDescription:
       "i'm into open-source, so all of my projects are available on",
     skills: "skills",
-    skillsDescription: "there are languages and tools that I use",
+    skillsDescription: "there are languages and tools that i use",
     contact: "contact",
     contactEmail: "feel free to send me",
     contactSocials: "or reach me on my socials",
