@@ -36,8 +36,6 @@ const translations = {
     contact: "contact",
     contactEmail: "feel free to send me",
     contactSocials: "or reach me on my socials",
-    english: "english",
-    polish: "polish",
     greeting: "hello, i'm wkktoria! 👋",
     linksNote: "note: all the links below open in new tabs",
   },
@@ -54,8 +52,6 @@ const translations = {
     contactEmail: "możesz wysłać mi",
     contactSocials:
       "lub skontaktować się ze mną na moich portalach społecznościowych",
-    english: "angielski",
-    polish: "polski",
     greeting: "cześć, jestem wkktoria! 👋",
     linksNote: "uwaga: wszystkie linki poniżej otwierają się w nowych kartach",
   },
@@ -71,9 +67,6 @@ const loadText = () => {
   projectsLink.innerText = i18n("projects");
   skillsLink.innerText = i18n("skills");
   contactLink.innerText = i18n("contact");
-
-  englishOption.innerText = i18n("english");
-  polishOption.innerText = i18n("polish");
 
   greeting.innerText = i18n("greeting");
 
