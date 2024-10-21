@@ -54,12 +54,19 @@ const translations = {
   },
 };
 
+const updateLanguageTag = () => {
+  const language = localStorage.getItem("lang") ?? "en";
+  document.documentElement.setAttribute("lang", language);
+}
+
 const i18n = (key) => {
   const language = localStorage.getItem("lang") ?? "en";
   return translations[language][key];
 };
 
 const loadText = () => {
+  updateLanguageTag();
+
   aboutLink.innerText = i18n("about");
   projectsLink.innerText = i18n("projects");
   skillsLink.innerText = i18n("skills");
