@@ -90,4 +90,10 @@ const loadText = () => {
   contactReachMe.innerText = i18n("contactSocials");
 };
 
+if (localStorage.getItem("lang") === "en") {
+  languageSelect[0].selected = true;
+} else if (localStorage.getItem("lang") === "pl") {
+  languageSelect[1].selected = true;
+}
+
 loadText();
