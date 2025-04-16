@@ -1,5 +1,11 @@
+import NavbarMain from "./components/navbar/NavbarMain";
+
 function App() {
-  return <main></main>;
+  return (
+    <main className="font-body">
+      <NavbarMain />
+    </main>
+  );
 }
 
 export default App;
