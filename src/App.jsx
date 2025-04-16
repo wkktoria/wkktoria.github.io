@@ -1,6 +1,7 @@
 import HeroMain from "./sections/hero/HeroMain";
 import NavbarMain from "./components/navbar/NavbarMain";
 import SubHero from "./sections/subhero/SubHero";
+import AboutMain from "./sections/about/AboutMain";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavbarMain />
       <HeroMain />
       <SubHero />
+      <AboutMain />
     </main>
   );
 }
