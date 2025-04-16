@@ -1,10 +1,10 @@
 import HeroMain from "./sections/hero/HeroMain";
 import NavbarMain from "./components/navbar/NavbarMain";
-import SubHero from "./sections/subhero/SubHero";
+import SubHero from "./components/SubHero";
 import AboutMain from "./sections/about/AboutMain";
 import Helper from "./components/Helper";
 import SkillsMain from "./sections/skills/SkillsMain";
-import SubSkills from "./sections/subskills/SubSkills";
+import SubSkills from "./components/SubSkills";
 import ExperienceMain from "./sections/experience/ExperienceMain";
 
 function App() {
