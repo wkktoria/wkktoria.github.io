@@ -28,6 +28,8 @@
   --color-darkGrey: #3f4441;
   /* BOX SHADOWS */
   --shadow-cyan: 0 0 20px 0 rgba(94, 206, 220, 0.5);
+  --shadow-cyanMedium: 10px 10px 200px 150px rgba(94, 206, 220, 0.5);
+  --shadow-orangeMedium: 10px 10px 200px 150px rgba(240, 169, 79, 0.5);
 }
 
 body {
