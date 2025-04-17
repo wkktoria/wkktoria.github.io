@@ -1,12 +1,5 @@
 import React from "react";
-
-const links = [
-  { link: "About Me", section: "about" },
-  { link: "Skills", section: "skills" },
-  { link: "Experience", section: "experience" },
-  { link: "Projects", section: "projects" },
-  { link: "Contact", section: "contact" },
-];
+import { links } from "../../constants/links";
 
 const NavbarLinks = () => {
   return (
