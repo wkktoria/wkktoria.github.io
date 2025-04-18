@@ -31,8 +31,8 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4 text-white"
       >
-        A student with a passion for building innovative solutions
-        <br /> and a drive to become a skilled full-stack developer.
+        A student with a passion for building innovative solutions and a drive
+        to become a skilled full-stack developer.
       </motion.p>
     </div>
   );
