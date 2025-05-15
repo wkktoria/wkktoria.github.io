@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="wkktoria's web portfolio" />
+    <title>wkktoria's Web Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="public/icon.svg" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/">wkktoria</a>
+      <nav>
+        <a
+          href="https://github.com/wkktoria"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/wiktoria-peretiatkowicz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Hello! I'm wkktoria...</h1>
+          <p>Aspiring Software Developer</p>
+        </div>
+        <h5 class="intro-description">
+          A student with a passion for building innovative solutions and a drive
+          to become a skilled software developer.
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid fa-arrow-right link-arrow"></i>
+          <a href="mailto:wiktoria.peretiatkowicz.contact@gmail.com">
+            Email me</a
+          >
+          <a
+            href="https://github.com/wkktoria"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/wiktoria-peretiatkowicz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        <div id="change-background" style="display: none">
+          <button onclick="changeBackground()">Change background</button>
+        </div>
+
+        <div class="color-div" style="display: none">
+          <h4>Pick a color</h4>
+          <p style="display: none">The background color has been changed.</p>
+          <input type="color" id="color-picker" onchange="changeColor()" />
+          <button onclick="resetColor()" style="display: none">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Area</th>
+              <th scope="col">Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Frontend Development</th>
+              <td>
+                <i class="fa-brands fa-html5"></i> HTML,
+                <i class="fa-brands fa-css"></i> CSS,
+                <i class="fa-brands fa-js"></i> JavaScript,
+                <i class="fa-brands fa-react"></i> React
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Backend Development</th>
+              <td>
+                <i class="fa-brands fa-java"></i> Java,
+                <i class="fa-solid fa-leaf"></i> Spring
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Version Control</th>
+              <td>
+                <i class="fa-brands fa-git"></i> Git,
+                <i class="fa-brands fa-github"></i> GitHub
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">DevOps / Deployment</th>
+              <td><i class="fa-brands fa-docker"></i> Docker</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>November 2024 - Present</p>
+              <h4>PageNook</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>Java</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Jakarta Servlet</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Jakarta Server Pages</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Hibernate</p>
+                </div>
+              </div>
+              <p>
+                PageNook is an online bookstore web app for browsing, searching,
+                and purchasing books. Includes user login, shopping cart, and
+                admin book management.
+              </p>
+              <div class="project-links">
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer">Live</a> -->
+                <a
+                  href="https://github.com/wkktoria/PageNook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="https://placedog.net/400/400?random"
+                alt="PageNook thumbnail"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>June 2024 - January 2025</p>
+              <h4>Edux</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>Java</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Spring Boot</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Spring Data JPA</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Spring Security</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Thymeleaf</p>
+                </div>
+              </div>
+              <p>
+                Edux is a simple and intuitive Learning Management System that
+                makes it easy to manage and deliver online learning.
+              </p>
+              <div class="project-links">
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer">Live</a> -->
+                <a
+                  href="https://github.com/wkktoria/PageNook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img class="big-img" src="public/edux.png" alt="Edux thumbnail" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By
+        <a
+          href="https://github.com/wkktoria"
+          target="_blank"
+          rel="noopener noreferrer"
+          >wkktoria</a
+        >
+        - <i class="fa-solid fa-star" style="color: #ffe234"></i> the repo on
+        <a
+          href="https://github.com/wkktoria/wkktoria.github.io/tree/minimal"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >.
+      </p>
+    </footer>
+    <script>
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetButton = document.querySelector(".color-div button");
+      const changeButton = document.getElementById("change-background");
+
+      function changeBackground() {
+        colorDiv.style.display = "block";
+        changeButton.style.display = "none";
+      }
+
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetButton.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        changeButton.style.display = "block";
+        hiddenText.style.display = "none";
+        resetButton.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
