@@ -102,6 +102,11 @@ main {
   font-size: 0.8rem;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 640px) {
   .project-card {
     flex-direction: row;
